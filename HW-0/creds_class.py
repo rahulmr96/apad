@@ -60,7 +60,5 @@ print("##############  Custom Encryption Algorithm ####################\n\n\n")
 
 cred1=encryption('asamant','Temp123')
 print("Encrypted Value {} {}".format(cred1.uname_en,cred1.password_en))
-
 print("Decrypted value is {}".format(cred1.customDecrypt(cred1.uname_en,cred1.u_undrfl,cred1.p_undrfl)))
-
-print(help(encryption))
+#print(help(encryption))

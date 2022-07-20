@@ -13,14 +13,13 @@ class HWSet(object):
     
     def check_out(self,checkout_units):
         if checkout_units>self.available:
-            self.used=self.capacity
-            #self.available=0   ###Error with code?? Ask and verify?
-            self.error_checkout=-1
-            #self.checkout_units=self.capacity   ###It should be checkedout
-            self.checkout_units=self.available
             self.error_mar=checkout_units-self.available
-            self.available=0
+            self.used=self.capacity
+            self.available=0   ###Error with code?? Ask and verify?
+            self.error_checkout=-1
+            self.checkout_units=self.capacity   ###It should be checkedout
 
+            
             return self.error_checkout
         else:
             self.available-=checkout_units
