@@ -32,4 +32,8 @@ for i in test:
 # check in 180 units
 hwSet1.check_in(180)
 # print number of units available after check in
+<<<<<<< HEAD
 print(f'Number of units available after checking in 180 units: {hwSet1.get_availability()}')
+=======
+print(f'Number of units available after checking in 180 units: {hwSet1.get_availability()}')
+>>>>>>> f44757c9e693a957f8e2ba5fbe821bff4e72b41c
